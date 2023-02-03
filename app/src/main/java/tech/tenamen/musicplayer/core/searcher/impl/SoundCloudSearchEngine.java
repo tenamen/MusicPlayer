@@ -11,7 +11,6 @@ public class SoundCloudSearchEngine extends SearchEngine <SoundCloudProvider> {
     private static String clientId;
 
     public SoundCloudSearchEngine() {
-
     }
 
     @Override
