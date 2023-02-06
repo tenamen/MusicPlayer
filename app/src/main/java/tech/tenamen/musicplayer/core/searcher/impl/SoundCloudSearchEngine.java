@@ -53,8 +53,8 @@ public class SoundCloudSearchEngine extends SearchEngine <SoundCloudProvider> {
                     new Artist(WebHelper.clip(contentData, "\"username\":\"", "\",")),
                     new ArtworkData(WebHelper.clip(contentData, "\"artwork_url\":\"", "\",")),
                     likes,
-                    WebHelper.clip(contentData, "\"media\":{\"transcodings\":[{\"url\":\"https://api-v2.soundcloud.com/media/soundcloud:tracks:", "/stream/hls"),
-                    WebHelper.clip(contentData, "\",\"track_authorization\":\"", "\",")
+                    WebHelper.clip(data, "\"media\":{\"transcodings\":[{\"url\":\"https://api-v2.soundcloud.com/media/soundcloud:tracks:", "/stream/hls"),
+                    WebHelper.clip(data, "\",\"track_authorization\":\"", "\",")
                 ));
 				startIndex = -1;
 				endIndex = -1;
@@ -65,5 +65,9 @@ public class SoundCloudSearchEngine extends SearchEngine <SoundCloudProvider> {
     @Override
     protected int getNumberPerPage() {
         return 20;
+    }
+
+    public static String getClientID() {
+        return clientId;
     }
 }

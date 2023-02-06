@@ -16,6 +16,7 @@ public class App {
     private static final SearchEngine<SoundCloudProvider> SOUNDCLOUD_ENGINE = new SoundCloudSearchEngine();
 
     public static void main(String[] args) {
-        System.out.println("AAAAA");
+        SOUNDCLOUD_ENGINE.search("Moe shop");
+        SOUNDCLOUD_ENGINE.getResult(0).playOrStop();
     }
 }
