@@ -1,5 +1,6 @@
 package tech.tenamen.musicplayer.core.player;
 
+import javafx.scene.media.AudioClip;
 import tech.tenamen.musicplayer.core.artist.Artist;
 import tech.tenamen.musicplayer.core.helper.data.ArtworkData;
 
@@ -9,6 +10,8 @@ public abstract class SoundProvider {
     private final Artist ARTIST;
     private final ArtworkData ARTWORK_DATA;
     private final int LIKES;
+    protected Thread playingThread;
+    protected AudioClip currentClip;
 
     private boolean playing;
 
