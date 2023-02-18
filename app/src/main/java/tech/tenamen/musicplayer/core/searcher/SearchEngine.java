@@ -3,12 +3,13 @@ package tech.tenamen.musicplayer.core.searcher;
 import java.util.ArrayList;
 import java.util.List;
 
+import tech.tenamen.musicplayer.core.helper.WebHelper;
 import tech.tenamen.musicplayer.core.player.SoundProvider;
 
 public abstract class SearchEngine <T extends SoundProvider> {
     
     protected int searchIndex;
-    protected String lastSearchedTitle;
+    protected String lastSearchedTitle, encodedTitle;
 
     private final List<T> searchResultList;
 
@@ -19,6 +20,7 @@ public abstract class SearchEngine <T extends SoundProvider> {
     public final void search(final String title) {
         this.searchResultList.clear();
         this.lastSearchedTitle = title;
+        this.encodedTitle = WebHelper.encodeString(title);
         this.onSearch();
     }
 

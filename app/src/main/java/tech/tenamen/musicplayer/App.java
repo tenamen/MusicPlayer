@@ -3,12 +3,19 @@
  */
 package tech.tenamen.musicplayer;
 
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import tech.tenamen.musicplayer.core.PlayList;
 import tech.tenamen.musicplayer.core.player.impl.*;
 import tech.tenamen.musicplayer.core.searcher.SearchEngine;
 import tech.tenamen.musicplayer.core.searcher.impl.*;
 
-public class App {
+public class App extends Application {
+
+    public static final String APP_NAME = "Music Player";
 
     private static final PlayList PLAY_LIST = new PlayList();
 
@@ -16,7 +23,16 @@ public class App {
     private static final SearchEngine<SoundCloudProvider> SOUNDCLOUD_ENGINE = new SoundCloudSearchEngine();
 
     public static void main(String[] args) {
-        SOUNDCLOUD_ENGINE.search("NCS");
-        SOUNDCLOUD_ENGINE.getResult(0).playOrStop();
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        final Parent root = FXMLLoader.load(getClass().getResource("scene/Main.fxml"));
+        final Scene scene = new Scene(root, 600, 400);
+        //scene.getStylesheets().add(this.getClass().getResource("").toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.setTitle(APP_NAME);
+        primaryStage.show();
     }
 }

@@ -26,9 +26,20 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="build/classes/java/main/tech/tenamen/musicplayer/view"/>
 	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
 	<classpathentry sourcepath="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/c388a68bc2b17a314dfa7c769d858ada0fc32dcf/guava-31.1-jre-sources.jar" kind="lib" path="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/60458f877d055d0c9114d9e1a2efb737b4bc282c/guava-31.1-jre.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/11.0.2/b189a6ab9f7abdd2ede840e5a90b7002c521f370/javafx-media-11.0.2-sources.jar" kind="lib" path="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/11.0.2/a9d052aba5dc676f26b5cfcd33a68e381f08a47a/javafx-media-11.0.2-win.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/11.0.2/2b7bb98d32266093bd49acd8778bedb55a326c20/javafx-fxml-11.0.2-sources.jar" kind="lib" path="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/11.0.2/b3242e4c031558574de2a1da685bb5fcdbb8a530/javafx-fxml-11.0.2-win.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -38,7 +49,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/11.0.2/b189a6ab9f7abdd2ede840e5a90b7002c521f370/javafx-media-11.0.2-sources.jar" kind="lib" path="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/11.0.2/a9d052aba5dc676f26b5cfcd33a68e381f08a47a/javafx-media-11.0.2-win.jar">
+	<classpathentry sourcepath="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/11.0.2/1535a8b57f01a712405a739a0d69e09ab99dbb6b/javafx-controls-11.0.2-sources.jar" kind="lib" path="C:/Users/tenamen/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/11.0.2/4ab633cf1eea60f76e2ae9905aedac862da88b08/javafx-controls-11.0.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

@@ -24,7 +24,7 @@ public class SoundCloudSearchEngine extends SearchEngine <SoundCloudProvider> {
         }
 		final String data = WebHelper.getURLContent(
             String.format("https://api-v2.soundcloud.com/search?q=%s&client_id=%s&limit=%d&offset=%d",
-            this.lastSearchedTitle.replaceAll(" ", "%20"),
+            this.encodedTitle.replaceAll(" ", "%20"),
             clientId,
             getNumberPerPage(),
             this.searchIndex * getNumberPerPage())).trim();
