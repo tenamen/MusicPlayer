@@ -1,0 +1,21 @@
+.primary_color{
+    -fx-background-color: #000000;
+}
+
+.secondary-color{
+    -fx-background-color: #050505;
+}
+
+.top-color{
+    -fx-background-color: #202020;
+}
+
+.searchfield{
+    -fx-background-radius: 50;
+    -fx-font-size: 24;
+    -fx-background-color: #ffffff;
+}
+
+.scroll-pane > .viewport{
+    -fx-background-color: #000000;
+}

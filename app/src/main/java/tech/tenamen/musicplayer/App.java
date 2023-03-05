@@ -19,8 +19,10 @@ public class App extends Application {
 
     private static final PlayList PLAY_LIST = new PlayList();
 
-    private static final SearchEngine<YouTubeProvider> YOUTUBE_ENGINE = new YouTubeSearchEngine();
-    private static final SearchEngine<SoundCloudProvider> SOUNDCLOUD_ENGINE = new SoundCloudSearchEngine();
+    public static Parent root;
+
+    public static final SearchEngine<YouTubeProvider> YOUTUBE_ENGINE = new YouTubeSearchEngine();
+    public static final SearchEngine<SoundCloudProvider> SOUNDCLOUD_ENGINE = new SoundCloudSearchEngine();
 
     public static void main(String[] args) {
         launch(args);
@@ -28,8 +30,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        final Parent root = FXMLLoader.load(getClass().getResource("scene/Main.fxml"));
-        final Scene scene = new Scene(root, 600, 400);
+        root = FXMLLoader.load(getClass().getResource("scene/Main.fxml"));
+        final Scene scene = new Scene(root, 1315, 890);
         //scene.getStylesheets().add(this.getClass().getResource("").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.setTitle(APP_NAME);

@@ -31,7 +31,7 @@ public class WebHelper {
             url = new URL(urly);
             final HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/91.0.4516.72 (Edition GX-CN)");
-            final InputStreamReader reader = new InputStreamReader(connection.getInputStream(), "Shift_JIS");
+            final InputStreamReader reader = new InputStreamReader(connection.getInputStream(), "UTF-8");
             final BufferedReader in = new BufferedReader(reader);
             while ((line = in.readLine()) != null) {
             	buffer.append(line);

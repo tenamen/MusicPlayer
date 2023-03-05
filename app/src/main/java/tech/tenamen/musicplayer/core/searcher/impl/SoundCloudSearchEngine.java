@@ -8,7 +8,7 @@ import tech.tenamen.musicplayer.core.searcher.SearchEngine;
 
 public class SoundCloudSearchEngine extends SearchEngine <SoundCloudProvider> {
 
-    private static String clientId;
+    private static String clientId = null;
 
     public SoundCloudSearchEngine() {
     }

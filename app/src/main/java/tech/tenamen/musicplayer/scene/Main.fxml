@@ -1,20 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.tenamen.musicplayer.scene.MainController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" styleClass="primary_color" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox prefHeight="20.0" prefWidth="600.0">
+      <VBox prefHeight="890.0" prefWidth="350.0" styleClass="secondary-color">
          <children>
-            <ImageView fitHeight="35.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
-            <TextField onKeyReleased="#onSearchInput" prefHeight="35.0" prefWidth="250.0" promptText="🔍Search" />
+            <ImageView fitHeight="75.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox prefHeight="275.0" prefWidth="288.0">
+               <children>
+                  <HBox prefHeight="55.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/library.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="75.0" prefWidth="175.0" text="Library" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="55.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/album.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="75.0" prefWidth="175.0" text="Albums" textFill="#a1a1a1">
+                           <font>
+                              <Font name="Calibri" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="55.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/following.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="75.0" prefWidth="175.0" text="Following" textFill="#a1a1a1">
+                           <font>
+                              <Font name="Calibri" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="55.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/like.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="75.0" prefWidth="175.0" text="Likes" textFill="#a1a1a1">
+                           <font>
+                              <Font name="Calibri" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="55.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/playlist.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="75.0" prefWidth="175.0" text="Playlist" textFill="#a1a1a1">
+                           <font>
+                              <Font name="Calibri" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="542.0" prefWidth="288.0">
+               <children>
+                  <HBox prefHeight="55.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="289.0" text="Recentry Played" textFill="#a1a1a1">
+                           <font>
+                              <Font name="Calibri" size="28.0" />
+                           </font>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
          </children>
-      </HBox>
-      <ListView prefHeight="330.0" prefWidth="600.0" />
-      <VBox prefHeight="50.0" prefWidth="600.0" />
+      </VBox>
+      <VBox prefHeight="890.0" prefWidth="1090.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="1090.0" styleClass="top-color">
+               <children>
+                  <TextField prefHeight="45.0" prefWidth="400.0" promptText="   🔍Search Music" styleClass="searchfield">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="75.0" prefWidth="590.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" style="fx-background-color: transparent;">
+                           <image>
+                              <Image url="@../image/mail.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" style="fx-background-color: transparent;">
+                           <image>
+                              <Image url="@../image/notification.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" style="fx-background-color: transparent;">
+                           <image>
+                              <Image url="@../image/misc.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
    </children>
-</VBox>
+</HBox>
